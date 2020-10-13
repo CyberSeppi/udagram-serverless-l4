@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "description": "Only dog images here",
+            "id": "1",
+            "name": "Dog"
+        },
+        {
+            "description": "What can be a better object for photography",
+            "id": "2",
+            "name": "Nature"
+        },
+        {
+            "description": "Creative display of urbane settings",
+            "id": "3",
+            "name": "Cities"
+        },
+        {
+            "description": "For the techies among us",
+            "id": "4",
+            "name": "Computers"
+        }
+    ]
+}
