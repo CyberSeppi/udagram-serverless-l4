@@ -86,6 +86,12 @@
         "LogGroupName": "/aws/lambda/serverless-jprentl-app-dev-SendUploadNotifications"
       }
     },
+    "ResizeImageLogGroup": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "LogGroupName": "/aws/lambda/serverless-jprentl-app-dev-ResizeImage"
+      }
+    },
     "ConnectHandlerLogGroup": {
       "Type": "AWS::Logs::LogGroup",
       "Properties": {
@@ -241,7 +247,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-GetGroups",
         "Handler": "src/lambda/http/getGroups.handler",
@@ -270,14 +276,14 @@
         "GetGroupsLogGroup"
       ]
     },
-    "GetGroupsLambdaVersionuZASD57n3Rxoc3eSufm6K68sCpI1pwGcz60A9p0": {
+    "GetGroupsLambdaVersionojBBaXCo6wesj0A2H6ifHXQrckOwKiLKOagnchogU8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetGroupsLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "CreateGroupLambdaFunction": {
@@ -287,7 +293,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-CreateGroup",
         "Handler": "src/lambda/http/createGroup.handler",
@@ -316,14 +322,14 @@
         "CreateGroupLogGroup"
       ]
     },
-    "CreateGroupLambdaVersionN4D0QHPHdFuGq3sExxzCixBeE4wry2BBLAbIBkg6J8": {
+    "CreateGroupLambdaVersion5O8WXDGPJldwfAbLZxA0KOKFxf8ZAy059EYFKvxzaDI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateGroupLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "GetImagesLambdaFunction": {
@@ -333,7 +339,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-GetImages",
         "Handler": "src/lambda/http/getImages.handler",
@@ -362,14 +368,14 @@
         "GetImagesLogGroup"
       ]
     },
-    "GetImagesLambdaVersionWbq9ZAC568vzRX22VbSV9Jb0aaUCfXqrvzFvvNclTvA": {
+    "GetImagesLambdaVersionOAUoecuQOegnqYjhzXBPDkYBSIIhweFisS1UG3ndgg": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetImagesLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "CreateImageLambdaFunction": {
@@ -379,7 +385,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-CreateImage",
         "Handler": "src/lambda/http/createImage.handler",
@@ -408,14 +414,14 @@
         "CreateImageLogGroup"
       ]
     },
-    "CreateImageLambdaVersionsCN0kw76ozLjY0wxWCAqt2M5H3Pqe0iQOAzv00hEnQ": {
+    "CreateImageLambdaVersionWMh2U4e3BqizF7Hv2QZfro83rfWJ1OxOAqyKsidGy3s": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateImageLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "SendUploadNotificationsLambdaFunction": {
@@ -425,7 +431,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-SendUploadNotifications",
         "Handler": "src/lambda/s3/sendNotifications.handler",
@@ -458,14 +464,60 @@
         "SendUploadNotificationsLogGroup"
       ]
     },
-    "SendUploadNotificationsLambdaVersionoWbqeqcbwwK2piNPWnZ8hDY8oRbhMaBsfenF2KnZE": {
+    "SendUploadNotificationsLambdaVersionnBnd6D8AUyr5WXKmE6PXy3rhvQPjis67tPeETJdM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SendUploadNotificationsLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
+      }
+    },
+    "ResizeImageLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "ServerlessDeploymentBucket"
+          },
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
+        },
+        "FunctionName": "serverless-jprentl-app-dev-ResizeImage",
+        "Handler": "src/lambda/s3/resizeImage.handler",
+        "MemorySize": 1024,
+        "Role": {
+          "Fn::GetAtt": [
+            "IamRoleLambdaExecution",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs12.x",
+        "Timeout": 6,
+        "Environment": {
+          "Variables": {
+            "GROUPS_TABLE": "Groups-dev",
+            "IMAGES_TABLE": "Images-dev",
+            "IMAGE_ID_INDEX": "ImageIdIndex",
+            "CONNECTIONS_TABLE": "Connections-dev",
+            "IMAGES_S3_BUCKET": "serverless-jprentl-images-dev",
+            "SIGNED_URL_EXPIRATION": 300,
+            "THUMBNAILS_S3_BUCKET": "serverless-jprentl-thumbnail-dev"
+          }
+        }
+      },
+      "DependsOn": [
+        "ResizeImageLogGroup"
+      ]
+    },
+    "ResizeImageLambdaVersionFUUcIJUzJXcBId6VqTt88fbiDB9QzDhnYCONkhGymU": {
+      "Type": "AWS::Lambda::Version",
+      "DeletionPolicy": "Retain",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "ResizeImageLambdaFunction"
+        },
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "ConnectHandlerLambdaFunction": {
@@ -475,7 +527,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-ConnectHandler",
         "Handler": "src/lambda/websocket/connect.handler",
@@ -504,14 +556,14 @@
         "ConnectHandlerLogGroup"
       ]
     },
-    "ConnectHandlerLambdaVersionfjzo7usntpdHrDfFbOj1Sr6DNuNyd15nulEtSQJfE78": {
+    "ConnectHandlerLambdaVersioncIrLNPiLt3WOVGBpAs58aI2FeU6ye5SkAg74A86bAk": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "ConnectHandlerLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "DisconnectHandlerLambdaFunction": {
@@ -521,7 +573,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-jprentl-app/dev/1602601072049-2020-10-13T14:57:52.049Z/serverless-jprentl-app.zip"
+          "S3Key": "serverless/serverless-jprentl-app/dev/1602615300980-2020-10-13T18:55:00.980Z/serverless-jprentl-app.zip"
         },
         "FunctionName": "serverless-jprentl-app-dev-DisconnectHandler",
         "Handler": "src/lambda/websocket/disconnect.handler",
@@ -550,14 +602,14 @@
         "DisconnectHandlerLogGroup"
       ]
     },
-    "DisconnectHandlerLambdaVersionnbKUqQAQSamJshnTl4Q2rZxpfnD9FSYdBiYW4wjXyc0": {
+    "DisconnectHandlerLambdaVersionVXIZJEuhwl9tpWOa6dWzCLGfFif22uVbzVxXb2rAyR8": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DisconnectHandlerLambdaFunction"
         },
-        "CodeSha256": "hlROZ7E5qsXZN9geVCv1g5VveV6MUeLKzYsCsov8w7Y="
+        "CodeSha256": "tyCugQkkQmekBesQ3V3Khd5JS2O2us7FkVxwJS0o3SQ="
       }
     },
     "ApiGatewayRestApi": {
@@ -891,7 +943,7 @@
         "ImageRequestModel"
       ]
     },
-    "ApiGatewayDeployment1602601056981": {
+    "ApiGatewayDeployment1602615280902": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -1286,6 +1338,61 @@
         }
       }
     },
+    "ResizeImageSnsSubscriptionImagesTopicdev": {
+      "Type": "AWS::SNS::Subscription",
+      "Properties": {
+        "TopicArn": {
+          "Fn::Join": [
+            ":",
+            [
+              "arn:aws:sns",
+              {
+                "Ref": "AWS::Region"
+              },
+              {
+                "Ref": "AWS::AccountId"
+              },
+              "imagesTopic-dev"
+            ]
+          ]
+        },
+        "Protocol": "lambda",
+        "Endpoint": {
+          "Fn::GetAtt": [
+            "ResizeImageLambdaFunction",
+            "Arn"
+          ]
+        }
+      }
+    },
+    "ResizeImageLambdaPermissionImagesTopicdevSNS": {
+      "Type": "AWS::Lambda::Permission",
+      "Properties": {
+        "FunctionName": {
+          "Fn::GetAtt": [
+            "ResizeImageLambdaFunction",
+            "Arn"
+          ]
+        },
+        "Action": "lambda:InvokeFunction",
+        "Principal": "sns.amazonaws.com",
+        "SourceArn": {
+          "Fn::Join": [
+            ":",
+            [
+              "arn:aws:sns",
+              {
+                "Ref": "AWS::Region"
+              },
+              {
+                "Ref": "AWS::AccountId"
+              },
+              "imagesTopic-dev"
+            ]
+          ]
+        }
+      }
+    },
     "GroupRequestModel": {
       "Type": "AWS::ApiGateway::Model",
       "Properties": {
@@ -1546,43 +1653,49 @@
     "GetGroupsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetGroupsLambdaVersionuZASD57n3Rxoc3eSufm6K68sCpI1pwGcz60A9p0"
+        "Ref": "GetGroupsLambdaVersionojBBaXCo6wesj0A2H6ifHXQrckOwKiLKOagnchogU8"
       }
     },
     "CreateGroupLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateGroupLambdaVersionN4D0QHPHdFuGq3sExxzCixBeE4wry2BBLAbIBkg6J8"
+        "Ref": "CreateGroupLambdaVersion5O8WXDGPJldwfAbLZxA0KOKFxf8ZAy059EYFKvxzaDI"
       }
     },
     "GetImagesLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetImagesLambdaVersionWbq9ZAC568vzRX22VbSV9Jb0aaUCfXqrvzFvvNclTvA"
+        "Ref": "GetImagesLambdaVersionOAUoecuQOegnqYjhzXBPDkYBSIIhweFisS1UG3ndgg"
       }
     },
     "CreateImageLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateImageLambdaVersionsCN0kw76ozLjY0wxWCAqt2M5H3Pqe0iQOAzv00hEnQ"
+        "Ref": "CreateImageLambdaVersionWMh2U4e3BqizF7Hv2QZfro83rfWJ1OxOAqyKsidGy3s"
       }
     },
     "SendUploadNotificationsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SendUploadNotificationsLambdaVersionoWbqeqcbwwK2piNPWnZ8hDY8oRbhMaBsfenF2KnZE"
+        "Ref": "SendUploadNotificationsLambdaVersionnBnd6D8AUyr5WXKmE6PXy3rhvQPjis67tPeETJdM"
+      }
+    },
+    "ResizeImageLambdaFunctionQualifiedArn": {
+      "Description": "Current Lambda function version",
+      "Value": {
+        "Ref": "ResizeImageLambdaVersionFUUcIJUzJXcBId6VqTt88fbiDB9QzDhnYCONkhGymU"
       }
     },
     "ConnectHandlerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "ConnectHandlerLambdaVersionfjzo7usntpdHrDfFbOj1Sr6DNuNyd15nulEtSQJfE78"
+        "Ref": "ConnectHandlerLambdaVersioncIrLNPiLt3WOVGBpAs58aI2FeU6ye5SkAg74A86bAk"
       }
     },
     "DisconnectHandlerLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DisconnectHandlerLambdaVersionnbKUqQAQSamJshnTl4Q2rZxpfnD9FSYdBiYW4wjXyc0"
+        "Ref": "DisconnectHandlerLambdaVersionVXIZJEuhwl9tpWOa6dWzCLGfFif22uVbzVxXb2rAyR8"
       }
     },
     "ServiceEndpoint": {
